@@ -169,6 +169,37 @@
       margin-top: 1.45rem;
     }
 
+    .summary {
+      border-bottom: 1px solid var(--border);
+      padding: 1rem 0 1.15rem;
+    }
+
+    .summary h2 {
+      font-size: 0.92rem;
+      margin-bottom: 0.55rem;
+    }
+
+    .summary ul {
+      display: grid;
+      gap: 0.3rem;
+      list-style: none;
+    }
+
+    .summary li {
+      color: var(--muted);
+      font-size: 0.94rem;
+      padding-left: 1rem;
+      position: relative;
+    }
+
+    .summary li::before {
+      color: var(--orange);
+      content: "-";
+      font-weight: 700;
+      left: 0;
+      position: absolute;
+    }
+
     article {
       border-bottom: 1px solid var(--border);
       padding: 1.35rem 0 1.45rem;
@@ -265,7 +296,7 @@
       <a class="logo" href="/" aria-label="Retour a l'accueil BonGest">
         <img src="../../assets/logo-bongest.png?v=20260413-2" alt="BonGest">
       </a>
-      <div class="section-label">Digest prive</div>
+      <div class="section-label">Digest n° 1</div>
     </div>
   </header>
 
@@ -279,6 +310,17 @@
       <span class="pill">7 infos utiles</span>
       <span class="pill">Batiment, chantier, technique</span>
     </div>
+
+    <section class="summary" aria-label="Sommaire du digest">
+      <h2>Dans ce numéro</h2>
+      <ul>
+        <li>PAC/froid et prescriptions OFEV pour 2027</li>
+        <li>Liste OCIRT des entreprises en infraction</li>
+        <li>Appels d'offres Genève et Vaud</li>
+        <li>SIA 118 et délai de 60 jours</li>
+        <li>Révision LATC et salaire minimum cantonal vaudois</li>
+      </ul>
+    </section>
 
     <section class="digest-list" aria-label="Selection de la semaine">
       <article>
