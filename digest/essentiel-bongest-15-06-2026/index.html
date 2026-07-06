@@ -117,6 +117,21 @@
       white-space: nowrap;
     }
 
+    .header-meta {
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.65rem;
+      justify-content: flex-end;
+    }
+
+    .archive-link {
+      color: var(--soft);
+      font-size: 0.78rem;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
     main {
       padding: 2rem 0 3.25rem;
     }
@@ -257,6 +272,34 @@
       padding-bottom: 1.5rem;
     }
 
+    .issue-nav {
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.2rem;
+      margin-top: 1.25rem;
+      padding-bottom: 1.45rem;
+    }
+
+    .issue-nav a {
+      display: grid;
+      gap: 0.12rem;
+      min-width: min(100%, 13rem);
+      text-decoration: none;
+    }
+
+    .issue-nav span {
+      color: var(--orange);
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .issue-nav strong {
+      font-size: 0.92rem;
+    }
+
     footer {
       background: var(--page);
       border-top: 1px solid var(--border);
@@ -280,6 +323,10 @@
         flex-direction: column;
       }
 
+      .header-meta {
+        justify-content: flex-start;
+      }
+
       .logo img {
         height: 38px;
       }
@@ -296,7 +343,10 @@
       <a class="logo" href="/" aria-label="Retour a l'accueil BonGest">
         <img src="../../assets/logo-bongest.png?v=20260413-2" alt="BonGest">
       </a>
-      <div class="section-label">Digest n° 1</div>
+      <div class="header-meta">
+        <span class="section-label">Digest n° 1</span>
+        <a class="archive-link" href="/digest/">Tous les numéros</a>
+      </div>
     </div>
   </header>
 
@@ -411,6 +461,17 @@
     <section class="closing" aria-label="Note BonGest">
       <p><strong>Note BonGest:</strong> ce digest est une selection courte. L'objectif n'est pas de remplacer les sources officielles, mais de signaler les points a verifier rapidement avec les bons liens.</p>
     </section>
+
+    <nav class="issue-nav" aria-label="Navigation entre les numéros">
+      <a href="/digest/">
+        <span>Tous les numéros</span>
+        <strong>Archive L'Essentiel BonGest</strong>
+      </a>
+      <a href="/digest/essentiel-bongest-07-07-2026/">
+        <span>Numéro suivant</span>
+        <strong>Digest n° 2 - 7 juillet 2026</strong>
+      </a>
+    </nav>
   </main>
 
   <footer>

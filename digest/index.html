@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>L'Essentiel BonGest - tous les numéros</title>
+  <meta name="description" content="Archive des numéros de L'Essentiel BonGest, le digest court pour les entreprises du bâtiment en Suisse romande.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#eceae4">
+  <link rel="canonical" href="https://bongest.ch/digest/">
+  <link rel="icon" href="../assets/favicon.ico?v=20260413-2" sizes="any">
+  <link rel="apple-touch-icon" href="../assets/logo-square.png?v=20260413-2">
+
+  <meta property="og:locale" content="fr_CH">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="BonGest">
+  <meta property="og:title" content="L'Essentiel BonGest - tous les numéros">
+  <meta property="og:description" content="Archive des numéros de L'Essentiel BonGest pour les entreprises du bâtiment en Suisse romande.">
+  <meta property="og:url" content="https://bongest.ch/digest/">
+  <meta property="og:image" content="https://bongest.ch/assets/logo-bongest.png?v=20260413-2">
+
+  <style>
+    @font-face {
+      font-family: "Outfit";
+      src: url("../assets/fonts/Outfit-wght.ttf") format("truetype");
+      font-weight: 300 700;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: "Playfair Display";
+      src: url("../assets/fonts/PlayfairDisplay-wght.ttf") format("truetype");
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --paper: #fffdf8;
+      --page: #f1eee7;
+      --navy: #183952;
+      --muted: #526879;
+      --soft: #748697;
+      --orange: #e8681a;
+      --border: #ded8cc;
+    }
+
+    body {
+      min-height: 100vh;
+      background: var(--paper);
+      color: var(--navy);
+      font-family: "Outfit", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-weight: 400;
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: var(--navy);
+      text-decoration-color: rgba(232, 104, 26, 0.45);
+      text-underline-offset: 0.18em;
+    }
+
+    a:hover {
+      color: var(--orange);
+    }
+
+    a:focus-visible {
+      outline: 2px solid var(--orange);
+      outline-offset: 4px;
+    }
+
+    .shell {
+      width: min(100% - 2rem, 700px);
+      margin-inline: auto;
+    }
+
+    header {
+      border-bottom: 1px solid var(--border);
+      background: var(--page);
+    }
+
+    .header-inner,
+    .footer-inner {
+      align-items: center;
+      display: flex;
+      gap: 1rem;
+      justify-content: space-between;
+      padding: 0.85rem 0;
+    }
+
+    .logo {
+      align-items: center;
+      display: inline-flex;
+      text-decoration: none;
+    }
+
+    .logo img {
+      display: block;
+      height: 42px;
+      width: auto;
+    }
+
+    .section-label {
+      color: var(--soft);
+      font-size: 0.7rem;
+      font-weight: 650;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    main {
+      padding: 2rem 0 3.25rem;
+    }
+
+    .kicker {
+      color: var(--orange);
+      font-size: 0.76rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      margin-bottom: 0.55rem;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: clamp(2rem, 6vw, 2.7rem);
+      line-height: 1.08;
+      margin-bottom: 0.8rem;
+    }
+
+    .intro {
+      border-bottom: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 1rem;
+      max-width: 66ch;
+      padding-bottom: 1.2rem;
+    }
+
+    .issue-list {
+      margin-top: 1.2rem;
+    }
+
+    article {
+      border-bottom: 1px solid var(--border);
+      padding: 1.2rem 0 1.3rem;
+    }
+
+    article a {
+      display: grid;
+      gap: 0.22rem;
+      text-decoration: none;
+    }
+
+    .issue-number {
+      color: var(--orange);
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      font-size: clamp(1.13rem, 3.2vw, 1.34rem);
+      line-height: 1.25;
+    }
+
+    p {
+      color: var(--muted);
+      font-size: 0.96rem;
+      max-width: 66ch;
+    }
+
+    footer {
+      background: var(--page);
+      border-top: 1px solid var(--border);
+    }
+
+    .footer-inner {
+      color: var(--soft);
+      font-size: 0.82rem;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+    }
+
+    @media (max-width: 720px) {
+      .header-inner,
+      .footer-inner {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .logo img {
+        height: 38px;
+      }
+
+      main {
+        padding-top: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="shell header-inner">
+      <a class="logo" href="/" aria-label="Retour a l'accueil BonGest">
+        <img src="../assets/logo-bongest.png?v=20260413-2" alt="BonGest">
+      </a>
+      <div class="section-label">Tous les numéros</div>
+    </div>
+  </header>
+
+  <main class="shell">
+    <p class="kicker">Archive</p>
+    <h1>L'Essentiel BonGest</h1>
+    <p class="intro">Les numéros publiés du digest BonGest pour les entreprises du bâtiment, les métiers techniques et les entreprises générales.</p>
+
+    <section class="issue-list" aria-label="Tous les numéros">
+      <article>
+        <a href="/digest/essentiel-bongest-07-07-2026/">
+          <span class="issue-number">Digest n° 2</span>
+          <h2>7 juillet 2026</h2>
+          <p>Appels d'offres Genève, solaire, loi énergie Vaud, PAC/froid, RTS chauffage, SN 592 000 et rénovation énergétique.</p>
+        </a>
+      </article>
+
+      <article>
+        <a href="/digest/essentiel-bongest-15-06-2026/">
+          <span class="issue-number">Digest n° 1</span>
+          <h2>15 juin 2026</h2>
+          <p>PAC/froid, OCIRT, appels d'offres, SIA 118, LATC et salaire minimum cantonal vaudois.</p>
+        </a>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <div class="shell footer-inner">
+      <div>BonGest - L'Essentiel BonGest</div>
+      <div class="footer-links">
+        <a href="/mentions-legales/" target="_blank" rel="noopener noreferrer">Mentions légales</a>
+        <a href="/confidentialite/" target="_blank" rel="noopener noreferrer">Confidentialité</a>
+        <a href="/" target="_blank" rel="noopener noreferrer">Accueil</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
