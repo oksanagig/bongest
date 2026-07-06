@@ -220,13 +220,18 @@
       padding: 1.35rem 0 1.45rem;
     }
 
+    .item-meta {
+      align-items: baseline;
+      display: flex;
+      gap: 1rem;
+      justify-content: space-between;
+      margin-bottom: 0.55rem;
+    }
+
     .number {
       color: var(--orange);
-      display: inline-block;
       font-size: 0.82rem;
       font-weight: 700;
-      margin-bottom: 0.35rem;
-      margin-right: 0.5rem;
     }
 
     h2 {
@@ -237,12 +242,11 @@
 
     .tag {
       color: var(--orange);
-      display: inline-block;
-      font-size: 0.68rem;
+      font-size: 0.74rem;
       font-weight: 700;
       letter-spacing: 0.08em;
-      margin-bottom: 0.55rem;
-      text-transform: uppercase;
+      text-align: right;
+      white-space: nowrap;
     }
 
     p {
@@ -373,9 +377,11 @@
 
     <section class="digest-list" aria-label="Selection de la semaine">
       <article>
-        <div class="number">01</div>
+        <div class="item-meta">
+          <span class="number">01</span>
+          <span class="tag">Échéance</span>
+        </div>
         <div>
-          <span class="tag">DELAI</span>
           <h2>Genève: appels d'offres à vérifier maintenant, avec délais juillet-août</h2>
           <p>TenderLift affiche 119 appels d'offres actifs à Genève, avec plusieurs dossiers bâtiment encore ouverts. Exemples visibles: école Noella Rouget à Meyrin, revêtement résistant au feu, délai 27.07; Pont des Marais à Confignon, démolition/construction, délai 24.07; HUG Cluse-Roseraie CFC 231/232, délai 10.08; EPICENTRE à Collonge-Bellerive, électricité, bois, ferblanterie/toiture et peinture, délais début/mi-août.</p>
           <p><strong>A retenir:</strong> les secteurs visibles incluent construction, architecture/ingénierie, bâtiments d'habitation, électricité et bois. La page source évolue; les délais rendent le sujet actionnable maintenant.</p>
@@ -385,9 +391,11 @@
       </article>
 
       <article>
-        <div class="number">02</div>
+        <div class="item-meta">
+          <span class="number">02</span>
+          <span class="tag">Référence</span>
+        </div>
         <div>
-          <span class="tag">REF</span>
           <h2>Genève: panneaux solaires, les seuils qui déclenchent une autorisation</h2>
           <p>Pour poser du solaire en toiture à Genève, certains seuils pratiques comptent: sur toit pentu, l'installation ne doit pas dépasser les pans du toit de plus de 20 cm; sur toit plat, elle ne doit pas dépasser l'arête supérieure de plus de 1 m et ne doit pas être visible d'en bas sous un angle de 45 degrés.</p>
           <p><strong>A retenir:</strong> si une condition n'est pas respectée, une autorisation de construire OAC est nécessaire. En principe, une pose simple passe par un avis d'ouverture de chantier 14 jours avant les travaux; les zones village ISOS A et les bâtiments à haute valeur patrimoniale demandent des contrôles plus stricts.</p>
@@ -397,9 +405,11 @@
       </article>
 
       <article>
-        <div class="number">03</div>
+        <div class="item-meta">
+          <span class="number">03</span>
+          <span class="tag">Réglementation</span>
+        </div>
         <div>
-          <span class="tag">REGLE</span>
           <h2>Vaud: nouvelle loi énergie au 1er janvier 2027</h2>
           <p>Le canton de Vaud annonce que la nouvelle loi sur l'énergie entrera en vigueur le 01.01.2027, en même temps que son règlement d'application. L'information vise notamment les propriétaires, communes, professionnels de la construction et de l'énergie, ainsi que les milieux économiques.</p>
           <p><strong>A retenir:</strong> le Conseil d'Etat lie la loi aux objectifs climatiques du bâtiment: -78% d'émissions de gaz à effet de serre d'ici 2040 et -90% d'ici 2050.</p>
@@ -409,9 +419,11 @@
       </article>
 
       <article>
-        <div class="number">04</div>
+        <div class="item-meta">
+          <span class="number">04</span>
+          <span class="tag">Réglementation</span>
+        </div>
         <div>
-          <span class="tag">REGLE</span>
           <h2>PAC et froid: nouvelles limites dès le 1er janvier 2027</h2>
           <p>Dès le 01.01.2027, les installations stationnaires de réfrigération et les pompes à chaleur contenant certains fluides frigorigènes stables dans l'air seront plus limitées. suissetec indique des délais transitoires de 6 mois pour l'importation et de 12 mois pour la remise à des tiers.</p>
           <p><strong>A retenir:</strong> des exceptions restent possibles quand il n'existe pas encore d'alternative, notamment pour certaines PAC intérieures ou installations servant au refroidissement de bâtiments et procédés.</p>
@@ -421,9 +433,11 @@
       </article>
 
       <article>
-        <div class="number">05</div>
+        <div class="item-meta">
+          <span class="number">05</span>
+          <span class="tag">Référence</span>
+        </div>
         <div>
-          <span class="tag">REF</span>
           <h2>Genève: chauffage et RTS, vérifier la zone avant remplacement</h2>
           <p>A Genève, si un bâtiment est dans la zone d'influence d'un réseau thermique structurant, le raccordement est obligatoire lors de la mise en place ou du renouvellement d'une production de chaleur. Exception notable: villas et petits immeubles dont la sous-station présente une puissance thermique nominale inférieure à 50 kW.</p>
           <p><strong>A retenir:</strong> la demande d'information thermique (DITH) auprès des SIG donne une réponse en principe sous 30 jours; l'étude technique de faisabilité est estimée à 2-4 mois.</p>
@@ -433,9 +447,11 @@
       </article>
 
       <article>
-        <div class="number">06</div>
+        <div class="item-meta">
+          <span class="number">06</span>
+          <span class="tag">Actualité</span>
+        </div>
         <div>
-          <span class="tag">ACTU</span>
           <h2>Sanitaire: SN 592 000 et données pluviométriques locales</h2>
           <p>suissetec indique le 30.06.2026 que l'enregistrement du webinaire SN 592 000 est disponible. Le webinaire a été organisé avec le VSA le 28.05.2026 et portait sur l'interprétation correcte des données pluviométriques locales.</p>
           <p><strong>A retenir:</strong> le sujet touche les projets d'évacuation des eaux, le dimensionnement et la coordination sanitaire lorsqu'un projet dépend des données de pluie locales.</p>
@@ -445,9 +461,11 @@
       </article>
 
       <article>
-        <div class="number">07</div>
+        <div class="item-meta">
+          <span class="number">07</span>
+          <span class="tag">Actualité</span>
+        </div>
         <div>
-          <span class="tag">ACTU</span>
           <h2>Genève: 300 projets de rénovation énergétique sur le bâti public</h2>
           <p>Batimag signale que l'Etat de Genève concentre 300 projets sur les bâtiments les plus énergivores, responsables de 90% des émissions de gaz à effet de serre. Le programme doit se déployer sur 13 ans.</p>
           <p><strong>A retenir:</strong> ce n'est pas une obligation directe, mais un signal de marché pour entreprises de rénovation, énergie, enveloppe, CVC, électricité et coordination chantier.</p>

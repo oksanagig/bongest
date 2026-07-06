@@ -220,13 +220,18 @@
       padding: 1.35rem 0 1.45rem;
     }
 
+    .item-meta {
+      align-items: baseline;
+      display: flex;
+      gap: 1rem;
+      justify-content: space-between;
+      margin-bottom: 0.55rem;
+    }
+
     .number {
       color: var(--orange);
-      display: inline-block;
       font-size: 0.82rem;
       font-weight: 700;
-      margin-bottom: 0.35rem;
-      margin-right: 0.5rem;
     }
 
     h2 {
@@ -237,12 +242,11 @@
 
     .tag {
       color: var(--orange);
-      display: inline-block;
-      font-size: 0.68rem;
+      font-size: 0.74rem;
       font-weight: 700;
       letter-spacing: 0.08em;
-      margin-bottom: 0.55rem;
-      text-transform: uppercase;
+      text-align: right;
+      white-space: nowrap;
     }
 
     p {
@@ -373,9 +377,11 @@
 
     <section class="digest-list" aria-label="Selection de la semaine">
       <article>
-        <div class="number">01</div>
+        <div class="item-meta">
+          <span class="number">01</span>
+          <span class="tag">Réglementation</span>
+        </div>
         <div>
-          <span class="tag">REGLE</span>
           <h2>PAC et froid: nouvelles prescriptions OFEV a preparer pour 2027</h2>
           <p>L'OFEV clarifie les nouvelles prescriptions pour les installations de refrigeration et les pompes a chaleur. Elles doivent s'appliquer des 2027, donc les projets 2026/2027 sont deja concernes.</p>
           <p><strong>A retenir:</strong> pour les chauffagistes, frigoristes et planificateurs, le sujet touche le choix des installations, la conformite technique et la maniere d'expliquer les solutions aux clients.</p>
@@ -385,9 +391,11 @@
       </article>
 
       <article>
-        <div class="number">02</div>
+        <div class="item-meta">
+          <span class="number">02</span>
+          <span class="tag">Actualité</span>
+        </div>
         <div>
-          <span class="tag">ACTU</span>
           <h2>Geneve: liste OCIRT des entreprises en infraction mise a jour</h2>
           <p>Geneve a remis a jour la liste OCIRT des entreprises en infraction. Avant de prendre un nouveau sous-traitant, c'est un petit controle qui peut eviter un gros probleme.</p>
           <p><strong>A retenir:</strong> la liste couvre notamment les infractions aux usages de branche, aux regles sur les travailleurs detaches et au travail au noir. Elle est mise a jour regulierement et peut servir de reflexe avant une collaboration.</p>
@@ -397,9 +405,11 @@
       </article>
 
       <article>
-        <div class="number">03</div>
+        <div class="item-meta">
+          <span class="number">03</span>
+          <span class="tag">Échéance</span>
+        </div>
         <div>
-          <span class="tag">DELAI</span>
           <h2>Geneve: appels d'offres actifs dans les metiers du batiment</h2>
           <p>TenderLift signale 126 appels d'offres actifs a Geneve. Dans la liste: travaux de construction, electricite, sanitaire, serrurerie, peinture, chapes, renovation HPE et equipements pour sites publics.</p>
           <p><strong>A retenir:</strong> plusieurs delais tombent entre fin juin et juillet, par exemple pour Geneve Aeroport, College Voltaire, Lancy, Meyrin et des projets scolaires.</p>
@@ -409,9 +419,11 @@
       </article>
 
       <article>
-        <div class="number">04</div>
+        <div class="item-meta">
+          <span class="number">04</span>
+          <span class="tag">Réglementation</span>
+        </div>
         <div>
-          <span class="tag">REGLE</span>
           <h2>SIA 118: defauts caches, le delai de 60 jours change la routine</h2>
           <p>Petit point juridique, gros effet pratique: depuis le 1er janvier 2026, les defauts caches ne fonctionnent plus avec l'ancienne logique de signalement immediat.</p>
           <p><strong>A retenir:</strong> le delai legal devient 60 jours des la decouverte du defaut. Le complement SIA 118-C1:2026 adapte la norme SIA 118, mais il doit etre convenu par les parties.</p>
@@ -421,9 +433,11 @@
       </article>
 
       <article>
-        <div class="number">05</div>
+        <div class="item-meta">
+          <span class="number">05</span>
+          <span class="tag">Échéance</span>
+        </div>
         <div>
-          <span class="tag">DELAI</span>
           <h2>Vaud: appels d'offres actifs, dont reseaux, electricite et CVC</h2>
           <p>TenderLift signale 133 appels d'offres actifs dans le canton de Vaud. On y voit des travaux de construction, routes, reseaux, electricite, CVC, genie civil, reservoir, canalisations et renovation.</p>
           <p><strong>A retenir:</strong> les delais visibles couvrent surtout fin juin et juillet, avec des projets a Lutry, EPFL, Aubonne, Lausanne, Chamossalaz et d'autres communes.</p>
@@ -433,9 +447,11 @@
       </article>
 
       <article>
-        <div class="number">06</div>
+        <div class="item-meta">
+          <span class="number">06</span>
+          <span class="tag">Échéance</span>
+        </div>
         <div>
-          <span class="tag">DELAI</span>
           <h2>Vaud: revision LATC en consultation jusqu'au 30 juin</h2>
           <p>Vaud consulte encore sur la revision de sa loi sur l'amenagement du territoire et les constructions. Pour les dossiers de permis, c'est un sujet a regarder avant la fin juin.</p>
           <p><strong>A retenir:</strong> le projet parle d'accelerer les procedures, de numeriser davantage les permis, de fixer certains delais et d'integrer climat/biodiversite dans la planification.</p>
@@ -445,9 +461,11 @@
       </article>
 
       <article>
-        <div class="number">07</div>
+        <div class="item-meta">
+          <span class="number">07</span>
+          <span class="tag">Actualité</span>
+        </div>
         <div>
-          <span class="tag">ACTU</span>
           <h2>Vaud: le principe d'un salaire minimum cantonal est accepte</h2>
           <p>Vaud a accepte le principe d'un salaire minimum cantonal dans la Constitution. Les textes concrets n'ont pas encore passe, donc le montant et les modalites restent a construire.</p>
           <p><strong>A retenir:</strong> pour les entreprises, il n'y a pas encore de nouvelle fiche de paie a appliquer demain, mais le sujet va revenir vite avec les partenaires sociaux.</p>
