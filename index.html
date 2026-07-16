@@ -176,6 +176,27 @@
       white-space: nowrap;
     }
 
+    .header-nav {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+    }
+
+    .header-digest-link {
+      border-left: 1px solid var(--border);
+      padding-left: 1.25rem;
+      color: var(--navy);
+      font-size: 0.8rem;
+      font-weight: 500;
+      text-decoration: none;
+      white-space: nowrap;
+      transition: color 0.2s ease;
+    }
+
+    .header-digest-link:hover {
+      color: var(--orange);
+    }
+
     /* ── Main / Hero ── */
 
     main {
@@ -438,6 +459,11 @@
         white-space: normal;
         text-align: left;
       }
+
+      .header-nav {
+        flex-wrap: wrap;
+        row-gap: 0.5rem;
+      }
     }
 
     @media (max-width: 480px) {
@@ -480,7 +506,10 @@
           loading="eager"
           decoding="async">
       </a>
-      <span class="location-tag">Genève</span>
+      <nav class="header-nav" aria-label="Navigation principale">
+        <span class="location-tag">Genève</span>
+        <a class="header-digest-link" href="digest/">L’Essentiel BonGest</a>
+      </nav>
     </div>
   </header>
 
