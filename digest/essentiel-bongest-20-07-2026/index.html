@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>L’Essentiel BonGest – semaine du 20 juillet 2026</title>
+  <meta name="description" content="Nouvelle CCT genevoise, prix de la construction en hausse de 0,6 %, batteries solaires, financement des rénovations, permis, sablage et formations.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#eceae4">
+  <link rel="canonical" href="https://bongest.ch/digest/essentiel-bongest-20-07-2026/">
+  <link rel="icon" href="../../assets/favicon.ico?v=20260413-2" sizes="any">
+  <link rel="apple-touch-icon" href="../../assets/logo-square.png?v=20260413-2">
+
+  <meta property="og:locale" content="fr_CH">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="BonGest">
+  <meta property="og:title" content="L’Essentiel BonGest – semaine du 20 juillet 2026">
+  <meta property="og:description" content="Salaires et apprentis à Genève, prix des devis, batteries solaires, aides à la rénovation, eaux de chantier, sablage et formations.">
+  <meta property="og:url" content="https://bongest.ch/digest/essentiel-bongest-20-07-2026/">
+  <meta property="og:image" content="https://bongest.ch/assets/logo-bongest.png?v=20260413-2">
+
+  <style>
+    @font-face {
+      font-family: "Outfit";
+      src: url("../../assets/fonts/Outfit-wght.ttf") format("truetype");
+      font-weight: 300 700;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: "Playfair Display";
+      src: url("../../assets/fonts/PlayfairDisplay-wght.ttf") format("truetype");
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --paper: #fffdf8;
+      --page: #f1eee7;
+      --navy: #183952;
+      --muted: #526879;
+      --soft: #748697;
+      --orange: #e8681a;
+      --border: #ded8cc;
+    }
+
+    body {
+      min-height: 100vh;
+      background: var(--paper);
+      color: var(--navy);
+      font-family: "Outfit", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-weight: 400;
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: var(--navy);
+      text-decoration-color: rgba(232, 104, 26, 0.45);
+      text-underline-offset: 0.18em;
+    }
+
+    a:hover {
+      color: var(--orange);
+    }
+
+    a:focus-visible {
+      outline: 2px solid var(--orange);
+      outline-offset: 4px;
+    }
+
+    .shell {
+      width: min(100% - 2rem, 700px);
+      margin-inline: auto;
+    }
+
+    header {
+      border-bottom: 1px solid var(--border);
+      background: var(--page);
+    }
+
+    .header-inner,
+    .footer-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 0.85rem 0;
+    }
+
+    .logo {
+      display: inline-flex;
+      align-items: center;
+      text-decoration: none;
+    }
+
+    .logo img {
+      display: block;
+      width: auto;
+      height: 42px;
+    }
+
+    .section-label {
+      color: var(--soft);
+      font-size: 0.7rem;
+      font-weight: 650;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    .header-meta {
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.65rem;
+      justify-content: flex-end;
+    }
+
+    .archive-link {
+      color: var(--soft);
+      font-size: 0.78rem;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    main {
+      padding: 2rem 0 3.25rem;
+    }
+
+    .issue-kicker {
+      color: var(--orange);
+      font-size: 0.76rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      margin-bottom: 0.55rem;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: clamp(2rem, 6vw, 2.7rem);
+      line-height: 1.08;
+      margin-bottom: 0.8rem;
+    }
+
+    .issue-meta {
+      border-bottom: 1px solid var(--border);
+      border-top: 1px solid var(--border);
+      color: var(--soft);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 1.25rem;
+      padding: 0.7rem 0;
+    }
+
+    .pill {
+      color: inherit;
+      font-size: 0.82rem;
+    }
+
+    .pill:not(:last-child)::after {
+      color: var(--border);
+      content: "/";
+      margin-left: 0.5rem;
+    }
+
+    .digest-list {
+      margin-top: 1.45rem;
+    }
+
+    .summary {
+      border-bottom: 1px solid var(--border);
+      padding: 1rem 0 1.15rem;
+    }
+
+    .summary h2 {
+      font-size: 0.92rem;
+      margin-bottom: 0.55rem;
+    }
+
+    .summary ul {
+      display: grid;
+      gap: 0.3rem;
+      list-style: none;
+    }
+
+    .summary li {
+      color: var(--muted);
+      font-size: 0.94rem;
+      padding-left: 1rem;
+      position: relative;
+    }
+
+    .summary li::before {
+      color: var(--orange);
+      content: "-";
+      font-weight: 700;
+      left: 0;
+      position: absolute;
+    }
+
+    article {
+      border-bottom: 1px solid var(--border);
+      padding: 1.35rem 0 1.45rem;
+    }
+
+    .item-meta {
+      align-items: baseline;
+      display: flex;
+      gap: 1rem;
+      justify-content: space-between;
+      margin-bottom: 0.55rem;
+    }
+
+    .number {
+      color: var(--orange);
+      font-size: 0.82rem;
+      font-weight: 700;
+    }
+
+    h2 {
+      font-size: clamp(1.13rem, 3.2vw, 1.34rem);
+      line-height: 1.25;
+      margin-bottom: 0.55rem;
+    }
+
+    .tag {
+      color: var(--orange);
+      font-size: 0.74rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-align: right;
+      white-space: nowrap;
+    }
+
+    p {
+      color: var(--muted);
+      font-size: 0.96rem;
+      max-width: 66ch;
+    }
+
+    p + p {
+      margin-top: 0.65rem;
+    }
+
+    strong {
+      color: var(--navy);
+      font-weight: 700;
+    }
+
+    .source {
+      color: var(--soft);
+      font-size: 0.9rem;
+      margin-top: 0.75rem;
+    }
+
+    .closing {
+      border-bottom: 1px solid var(--border);
+      margin-top: 1.5rem;
+      padding-bottom: 1.5rem;
+    }
+
+    .issue-nav {
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.2rem;
+      margin-top: 1.25rem;
+      padding-bottom: 1.45rem;
+    }
+
+    .issue-nav a {
+      display: grid;
+      gap: 0.12rem;
+      min-width: min(100%, 13rem);
+      text-decoration: none;
+    }
+
+    .issue-nav span {
+      color: var(--orange);
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .issue-nav strong {
+      font-size: 0.92rem;
+    }
+
+    footer {
+      background: var(--page);
+      border-top: 1px solid var(--border);
+    }
+
+    .footer-inner {
+      color: var(--soft);
+      font-size: 0.82rem;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+    }
+
+    @media (max-width: 720px) {
+      .header-inner,
+      .footer-inner {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .header-meta {
+        justify-content: flex-start;
+      }
+
+      .logo img {
+        height: 38px;
+      }
+
+      main {
+        padding-top: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="shell header-inner">
+      <a class="logo" href="/" aria-label="Retour à l’accueil BonGest">
+        <img src="../../assets/logo-bongest.png?v=20260413-2" alt="BonGest">
+      </a>
+      <div class="header-meta">
+        <span class="section-label">N° 3</span>
+        <a class="archive-link" href="/digest/">Tous les numéros</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="shell">
+    <p class="issue-kicker">Semaine du 20 juillet 2026</p>
+    <h1>L’Essentiel BonGest</h1>
+
+    <div class="issue-meta" aria-label="Informations de l’édition">
+      <span class="pill">Genève et Vaud</span>
+      <span class="pill">8 infos utiles</span>
+      <span class="pill">Bâtiment, chantier, technique</span>
+    </div>
+
+    <section class="summary" aria-label="Sommaire du numéro">
+      <h2>Dans ce numéro</h2>
+      <ul>
+        <li>Genève : nouvelle CCT depuis le 1er juillet et salaires d’apprentis adaptés dès août</li>
+        <li>Prix de la construction : +0,6 % en six mois, à vérifier dans les devis encore ouverts</li>
+        <li>Solaire : nouvelles installations en recul de 26 %, capacités de batteries en hausse de 70 %</li>
+        <li>Rénovation à Genève et permis vaudois : financement à vérifier et plan des eaux à joindre</li>
+        <li>Nouveaux forfaits pour apprentis, sécurité du sablage et formation photovoltaïque en français</li>
+      </ul>
+    </section>
+
+    <section class="digest-list" aria-label="Sélection de la semaine">
+      <article>
+        <div class="item-meta">
+          <span class="number">01</span>
+          <span class="tag">Réglementation</span>
+        </div>
+        <div>
+          <h2>Genève : la nouvelle CCT change les salaires et les horaires</h2>
+          <p>Depuis le 1er juillet 2026, la CCT étendue des métiers techniques du bâtiment s’applique à l’ensemble de la branche à Genève. Elle prévoit notamment une semaine de 40 heures. Pour le personnel concerné engagé avant le 1er octobre 2025, le salaire effectif augmente de 20,80 francs par mois, ou de 0,12 franc par heure pour les salariés payés à l’heure ; une augmentation déjà accordée en 2026 peut être prise en compte.</p>
+          <p><strong>À retenir :</strong> les salaires mensuels des apprentis augmentent dès le 1er août. Par exemple, un apprenti chauffage, froid ou ventilation passe de 840 à 890 francs en 1re année et de 1’850 à 1’930 francs en 4e année.</p>
+          <p><strong>Action :</strong> contrôler avant la paie d’août les employés soumis à la CCT, les minima applicables et les nouveaux montants d’apprentissage.</p>
+          <p class="source"><strong>Source :</strong> <a href="https://www.seco.admin.ch/fr/conventions-collectives-de-travail-geneve" target="_blank" rel="noopener noreferrer">SECO</a></p>
+        </div>
+      </article>
+
+      <article>
+        <div class="item-meta">
+          <span class="number">02</span>
+          <span class="tag">Actualité</span>
+        </div>
+        <div>
+          <h2>Prix de la construction : +0,6 % en six mois</h2>
+          <p>L’indice suisse des prix de la construction a progressé de 0,6 % entre octobre 2025 et avril 2026. Sur un an, le renchérissement atteint 1,0 %, avec des hausses notamment dans la maçonnerie, les fenêtres bois-métal et les portes intérieures en métal.</p>
+          <p><strong>À retenir :</strong> cet indice sert à adapter les budgets ou devis tant qu’aucun prix n’est encore fixé par adjudication ou contrat. Il ne remplace pas la méthode contractuelle de calcul du renchérissement en fin de chantier.</p>
+          <p><strong>Action :</strong> revoir les prix de référence des offres encore ouvertes et indiquer clairement leur durée de validité.</p>
+          <p class="source"><strong>Source :</strong> <a href="https://www.seco.admin.ch/fr/newnsb/5I_iyemthjjZBiEuOW8ZX" target="_blank" rel="noopener noreferrer">Office fédéral de la statistique</a></p>
+        </div>
+      </article>
+
+      <article>
+        <div class="item-meta">
+          <span class="number">03</span>
+          <span class="tag">Actualité</span>
+        </div>
+        <div>
+          <h2>Solaire : le marché ralentit, les batteries accélèrent</h2>
+          <p>Le photovoltaïque suisse a produit près de 8 TWh en 2025, soit environ 14 % de la consommation finale d’électricité. Mais les nouvelles installations ont reculé de 26 % par rapport à 2024, première baisse depuis 2017.</p>
+          <p><strong>À retenir :</strong> une capacité de batteries supplémentaire de 490 MWh a été installée en 2025, en hausse de 70 %. Plus de 93’000 systèmes de stockage étaient en service à la fin de l’année.</p>
+          <p><strong>Action :</strong> dans les offres solaires, chiffrer plus systématiquement l’autoconsommation et une option batterie plutôt que de présenter uniquement les modules.</p>
+          <p class="source"><strong>Source :</strong> <a href="https://www.swissolar.ch/fr/news/detail/statistiques-de-l-energie-solaire-2025-essor-des-batteries-de-stockage-recul-des-modules-pv-il-est-temps-d-ameliorer-les-conditions-cadres-85406" target="_blank" rel="noopener noreferrer">Swissolar</a></p>
+        </div>
+      </article>
+
+      <article>
+        <div class="item-meta">
+          <span class="number">04</span>
+          <span class="tag">Actualité</span>
+        </div>
+        <div>
+          <h2>Genève : de nouveaux financements pour débloquer les rénovations</h2>
+          <p>Genève a rendu opérationnel son dispositif de financement de l’assainissement énergétique des bâtiments. Il combine des subventions d’investissement, des cautionnements de l’État pour faciliter un crédit bancaire et des prêts cantonaux lorsque le financement classique n’est pas accessible.</p>
+          <p><strong>À retenir :</strong> une majoration de subvention est aussi prévue lorsque la capacité financière du propriétaire est insuffisante, notamment pour certains projets collectifs en propriété par étages.</p>
+          <p><strong>Action :</strong> lorsqu’un client reporte une rénovation pour des raisons de financement, lui faire vérifier son éligibilité avant de réduire ou d’abandonner le projet.</p>
+          <p class="source"><strong>Source :</strong> <a href="https://www.ge.ch/blog/geneve-energie/canton-renforce-son-action-faveur-renovation-energetique-batiments-2-07-2026" target="_blank" rel="noopener noreferrer">Office cantonal de l’énergie</a></p>
+        </div>
+      </article>
+
+      <article>
+        <div class="item-meta">
+          <span class="number">05</span>
+          <span class="tag">Réglementation</span>
+        </div>
+        <div>
+          <h2>Vaud : le plan des eaux devient une pièce du dossier de permis</h2>
+          <p>Toute demande de permis vaudoise impliquant un chantier de gros œuvre ou de second œuvre doit être accompagnée d’un plan d’évacuation des eaux. Il doit couvrir leur récolte, leur traitement, leur contrôle et leur évacuation ou infiltration.</p>
+          <p><strong>À retenir :</strong> le maître d’ouvrage et ses mandataires sont responsables de la conformité des rejets et peuvent supporter les conséquences financières d’une pollution. Le plan doit être validé avant le début des travaux.</p>
+          <p><strong>Action :</strong> ajouter le plan d’évacuation des eaux à la checklist du permis et nommer son responsable dès la préparation du chantier.</p>
+          <p class="source"><strong>Source :</strong> <a href="https://www.vd.ch/actualites/actualite/news/26217-gestion-des-eaux-de-chantier-dans-le-cadre-des-travaux-de-gros-et-de-second-oeuvres-modification-de-la-directive-cantonale-dcpe-872" target="_blank" rel="noopener noreferrer">État de Vaud</a></p>
+        </div>
+      </article>
+
+      <article>
+        <div class="item-meta">
+          <span class="number">06</span>
+          <span class="tag">Échéance</span>
+        </div>
+        <div>
+          <h2>Électricité : les forfaits des cours interentreprises augmentent en septembre</h2>
+          <p>Les forfaits cantonaux par apprenti et par jour de cours interentreprises augmenteront dès l’année d’apprentissage 2026/2027. À partir du 1er septembre, ils passeront de 40 à 50 francs pour les installateurs-électriciens, de 50 à 60 francs pour les électriciens de montage et de 40 à 70 francs pour les planificateurs-électriciens.</p>
+          <p><strong>À retenir :</strong> la liste officielle des forfaits 2026/2027 est disponible depuis le 1er juillet ; le changement concerne les formations révisées sous l’Orfo 2026.</p>
+          <p><strong>Action :</strong> vérifier avec la section et le responsable formation les montants utilisés pour le budget des apprentis 2026/2027.</p>
+          <p class="source"><strong>Source :</strong> <a href="https://www.eit.swiss/fr/formation/developpement-professionnel/projet-orfo-2022" target="_blank" rel="noopener noreferrer">EIT.swiss</a></p>
+        </div>
+      </article>
+
+      <article>
+        <div class="item-meta">
+          <span class="number">07</span>
+          <span class="tag">Actualité</span>
+        </div>
+        <div>
+          <h2>Sablage : une nouvelle fiche Suva cible plomb, chrome, PCB et goudron</h2>
+          <p>La Suva publie une nouvelle fiche de trois pages sur le sablage en chantier. Les anciennes peintures et protections anticorrosion peuvent contenir du plomb, du chrome ou des PCB ; les colles et masses d’étanchéité goudronnées peuvent contenir des hydrocarbures aromatiques polycycliques.</p>
+          <p><strong>À retenir :</strong> le sablage libère beaucoup de substances nocives. La Suva demande une protection respiratoire efficace, des règles d’hygiène strictes et une décontamination adaptée ; les peintures au plomb sont interdites en Suisse depuis 2005, mais restent présentes sur des ouvrages anciens.</p>
+          <p><strong>Action :</strong> avant un sablage ou ponçage d’ancien revêtement, faire identifier les polluants et joindre la fiche Suva à la préparation sécurité du chantier.</p>
+          <p class="source"><strong>Source :</strong> <a href="https://www.suva.ch/fr-ch/prevention/par-danger/materiaux-rayonnements-et-situations-a-risque/polluants-du-batiment" target="_blank" rel="noopener noreferrer">Suva</a></p>
+        </div>
+      </article>
+
+      <article>
+        <div class="item-meta">
+          <span class="number">08</span>
+          <span class="tag">Échéance</span>
+        </div>
+        <div>
+          <h2>Formation photovoltaïque en français : session ouverte dès le 25 août</h2>
+          <p>Swissolar propose une formation de base en français du 25 août au 3 septembre : deux webinaires d’introduction, puis trois journées à Fribourg. Le cours couvre conception, calculs, montage en toiture, autoconsommation, sécurité, mise en service et maintenance.</p>
+          <p><strong>À retenir :</strong> la formation coûte 1’290 francs pour les membres et 1’720 francs pour les non-membres ; l’examen facultatif coûte 280 francs et les trois jours de cours sont obligatoires pour s’y inscrire.</p>
+          <p><strong>Action :</strong> réserver une place si l’entreprise veut rendre une personne autonome sur la préparation et le suivi des projets photovoltaïques cet automne.</p>
+          <p class="source"><strong>Source :</strong> <a href="https://www.swissolar.ch/fr/agenda/detail/cours-swissolar-installations-photovoltaiques-cours-de-base-81133" target="_blank" rel="noopener noreferrer">Swissolar</a></p>
+        </div>
+      </article>
+    </section>
+
+    <section class="closing" aria-label="Note BonGest">
+      <p><strong>Note BonGest :</strong> ce numéro est une sélection courte. L’objectif n’est pas de remplacer les sources officielles, mais de signaler les points à vérifier rapidement avec les bons liens.</p>
+    </section>
+
+    <nav class="issue-nav" aria-label="Navigation entre les numéros">
+      <a href="/digest/essentiel-bongest-14-07-2026/">
+        <span>Numéro précédent</span>
+        <strong>N° 2 - 14 juillet 2026</strong>
+      </a>
+      <a href="/digest/">
+        <span>Tous les numéros</span>
+        <strong>Archive L’Essentiel BonGest</strong>
+      </a>
+    </nav>
+  </main>
+
+  <footer>
+    <div class="shell footer-inner">
+      <div>BonGest - L’Essentiel BonGest</div>
+      <div class="footer-links">
+        <a href="/mentions-legales/" target="_blank" rel="noopener noreferrer">Mentions légales</a>
+        <a href="/confidentialite/" target="_blank" rel="noopener noreferrer">Confidentialité</a>
+        <a href="/" target="_blank" rel="noopener noreferrer">Accueil</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
